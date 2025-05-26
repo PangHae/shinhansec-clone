@@ -1,0 +1,296 @@
+.footer {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #f1f1f3;
+    text-align: center;
+    background: #fafbfb;
+    z-index: 100;
+}
+
+.footArea {
+    /* width: 980px; */
+    margin: 0 auto;
+    text-align: left;
+}
+
+.callList {
+    float: left;
+    width: 657px;
+    height: 145px;
+    margin-top: 30px;
+}
+
+.callList li.call02 {
+    width: 180px;
+}
+
+.callList > li {
+    float: left;
+}
+
+.callList li .footerTitle {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.callList li strong {
+    display: block;
+    color: #1598dc;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.call02 .infoText {
+    font-size: 12px;
+    color: #333;
+    line-height: 22px;
+}
+
+.call02 .link:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.footArea .call03.pt0 {
+    padding-top: 0;
+}
+
+.callList li.call03 {
+    width: 230px;
+    padding-top: 40px;
+}
+
+.callList > li {
+    float: left;
+}
+
+.listType1 {
+    position: relative; /* li의 position: relative와 함께 쓰면 더 안전 */
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.listType1 > li {
+    position: relative;
+    padding-left: 18px;
+    margin-top: 5px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.listType1 > li::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 18px;
+    height: 3px;
+    background: url('../assets/bg_list2.gif') no-repeat;
+}
+
+.footArea .linkList {
+    float: right;
+    margin-top: 40px;
+}
+
+.footArea .linkList a:first-child {
+    margin-left: 0;
+}
+
+.footArea .linkList a {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    margin-left: 37px;
+    padding: 40px 0 0 0;
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footArea .linkList a:hover {
+    text-decoration: underline;
+}
+
+.footArea .linkList .link01::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    background: url('../assets/bg_footer.gif') no-repeat;
+}
+
+.footArea .linkList a.link02:before {
+    background-position: -36px 0;
+}
+
+.footArea .linkList .link02::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    background: url('../assets/bg_footer.gif') no-repeat;
+}
+
+.footArea .linkList a.link03:before {
+    background-position: -72px 0;
+}
+
+.footArea .linkList .link03::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    background: url('../assets/bg_footer.gif') no-repeat;
+}
+
+.footArea .linkList a.link04:before {
+    background-position: -108px 0;
+}
+
+.footArea .linkList .link04::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 36px;
+    background: url('../assets/bg_footer.gif') no-repeat;
+}
+
+.footArea .comLink {
+    clear: both;
+    position: relative;
+    height: 40px;
+    border-top: 1px solid #c2c5c6;
+    border-bottom: 1px solid #c2c5c6;
+}
+
+.footArea .comLink .list {
+    margin-left: 10px;
+}
+
+.footArea .comLink .list li a {
+    position: relative;
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.comLink .list a[href*="new_eng"] {
+    position: relative;
+}
+
+.comLink .list a[href*="new_eng"]::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    background: #c5c6c6;
+}
+
+.footArea .comLink .list li {
+    float: left;
+}
+
+.comLink .list,
+.comLink .list li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.comLink .list a:last-child::after {
+    content: "";
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 11px;
+    color: #1598dc;
+    font-weight: 600;
+    vertical-align: super;
+    letter-spacing: 1px;
+}
+
+ol:after, ul:after {
+    content: "";
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+
+.comLink .list a {
+    color: #000;
+    text-decoration: none;
+}
+.comLink .list a:hover {
+    text-decoration: underline;
+}
+.comLink .list a:visited {
+    color: #000;
+}
+
+.footArea .comLink .familySite {
+    position: absolute;
+    top: 0;
+    right: 230px;
+    width: 236px;
+}
+
+.footArea .comLink .familySite > a {
+    position: relative;
+    display: block;
+    height: 40px;
+    padding-left: 20px;
+    color: #333;
+    line-height: 42px;
+    background: #eeefef;
+}
+
+.footArea .comLink .familySite > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 13px;
+    height: 7px;
+    background: url(../assets/bg_footer.gif) no-repeat -144px 0;
+}
