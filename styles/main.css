@@ -1,14 +1,251 @@
-.container-header {
-  .guide-description {
-    display: flex;
-  }
-}
+#authentication-center-container {
+  width: 100%;
+  .container-header {
+    .title {
+      margin-bottom: 50px;
+      color: rgb(14, 15, 15);
+      font-size: 36px;
+      text-align: center;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 50px;
+    }
 
-.title {
-  margin-bottom: 50px;
-  color: rgb(14, 15, 15);
-  font-size: 36px;
-  text-align: center;
-  font-weight: 600;
-  line-height: 1;
+    .guide-description {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: flex-start;
+      font-size: 14px;
+      color: rgb(51, 51, 51);
+      overflow-wrap: break-word;
+      word-break: keep-all;
+      text-size-adjust: none;
+
+      .guide-image {
+        width: 190px;
+      }
+
+      .guide-content-list {
+        flex-grow: 1;
+        position: relative;
+
+        > li {
+          padding-left: 103px;
+        }
+        /* 
+        > li::before {
+          content: " ";
+          position: absolute;
+          top: 9px;
+          left: 85px;
+          width: 18px;
+          height: 3px;
+          background-image: url(/siw/common/images/common/bg_list2.gif);
+        } */
+      }
+    }
+  }
+
+  .authentication-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+
+    .top-auth-content-container {
+      width: 100%;
+      .content {
+        display: flex;
+        padding: 40px 0;
+        width: 100%;
+        min-height: 325px;
+        align-items: center;
+        justify-content: center;
+
+        & > li {
+          position: relative;
+          height: 350px;
+          line-height: 1.6;
+          flex: 1 0 0;
+          border-right: 1px
+            solid
+            rgb(226, 226, 228);
+
+          .button-container {
+            position: absolute;
+            bottom: 0px;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            .icon-button {
+              position: relative;
+              display: inline-block;
+              margin: 10px 3px
+                0;
+              color: #000;
+              height: 30px;
+              padding: 0 28px
+                0 10px;
+              font-size: 14px;
+              line-height: 30px;
+              border: 1px
+                solid #999;
+              background: #fff;
+              cursor: pointer;
+
+              &::before {
+                margin: -3px
+                  5px 0 0;
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                background: url(https://www.shinhansec.com/siw/common/images/common/bg_icon.png)
+                  no-repeat;
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                margin: -4px 0
+                  0;
+                width: 5px;
+                height: 7px;
+                background-position: 0 -40px;
+              }
+            }
+          }
+
+          &::before {
+            content: "";
+            display: block;
+            height: 4px;
+            margin: -40px 2px
+              40px;
+            background: rgb(
+              64,
+              170,
+              226
+            );
+          }
+
+          &:last-child {
+            border-right: none;
+          }
+
+          .title {
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 21px;
+
+            &::after {
+              content: "";
+              display: block;
+              width: 175px;
+              height: 140px;
+              margin: 30px
+                auto;
+              background: url("https://www.shinhansec.com/siw/common/images/customer/bg_certi.gif")
+                no-repeat;
+            }
+          }
+        }
+
+        & ol {
+          padding: 0 35px;
+          counter-reset: number
+            0;
+
+          & > li {
+            line-height: 1.6;
+            border: none;
+            display: list-item;
+            position: relative;
+            padding-left: 18px;
+          }
+
+          & > li::before {
+            content: counter(
+                number
+              )
+              ". ";
+            counter-increment: number
+              1;
+            display: inline-block;
+            width: 23px;
+            margin-left: -23px;
+          }
+        }
+
+        .size {
+          flex: 1 1 0;
+        }
+
+        .diff-company-auth {
+          .title {
+            &::after {
+              background-position: 0 -140px;
+            }
+          }
+
+          &::before {
+            content: "";
+            display: block;
+            height: 4px;
+            margin: -40px 2px
+              40px;
+            background: rgb(
+              96,
+              131,
+              204
+            );
+          }
+        }
+
+        .smart-phone-auth-copy {
+          .title {
+            &::after {
+              background-position: 0 -280px;
+            }
+          }
+
+          &::before {
+            content: "";
+            display: block;
+            height: 4px;
+            margin: -40px 2px
+              40px;
+            background: rgb(
+              151,
+              123,
+              201
+            );
+          }
+
+          ul {
+            padding: 0 35px;
+            & > li {
+              display: list-item;
+              position: relative;
+              padding-left: 18px;
+              line-height: 22px;
+              border: none;
+            }
+
+            & > li::before {
+              content: "";
+              position: absolute;
+              top: 9px;
+              left: 8px;
+              width: 18px;
+              height: 3px;
+              background: url(/siw/common/images/common/bg_list2.gif)
+                no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
 }
