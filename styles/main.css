@@ -1,0 +1,14 @@
+.container-header {
+  .guide-description {
+    display: flex;
+  }
+}
+
+.title {
+  margin-bottom: 50px;
+  color: rgb(14, 15, 15);
+  font-size: 36px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1;
+}
