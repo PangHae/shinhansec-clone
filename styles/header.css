@@ -1,153 +1,165 @@
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  width: 980px;
 }
 
 .header-bg {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 135px;
-    background: url('https://www.shinhansec.com/siw/common/images/common/bg_top.gif') no-repeat 50% 0;
-    z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 135px;
+  background: url("https://www.shinhansec.com/siw/common/images/common/bg_top.gif")
+    no-repeat 50% 0;
+  z-index: -1;
 }
 
 .topbar {
-    font-size: 13px;
-    padding: 5px 20px;
-    display: flex;
-    align-items: center;
-    margin-top: 18px;
-    margin-bottom: 10px;
+  font-size: 13px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+  margin-bottom: 10px;
 }
 
 .logo {
-    overflow: hidden;
-    display: block;
-    width: 189px;
-    height: 33px;
-    text-align: left;
-    background: url('https://www.shinhansec.com/siw/common/images/common/bg_layout_G.png') no-repeat;
+  overflow: hidden;
+  display: block;
+  width: 189px;
+  height: 33px;
+  text-align: left;
+  background: url("https://www.shinhansec.com/siw/common/images/common/bg_layout_G.png")
+    no-repeat;
 }
 
 .top-links ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    align-items: center;
-    margin-left: 145px;
-    height: 13px;
-    padding: 9px;
-    color: #4f5156;
-    font-size: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  margin-left: 145px;
+  height: 13px;
+  padding: 9px;
+  color: #4f5156;
+  font-size: 12px;
 }
 
 .top-links bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    height: 60px;
-    box-shadow: 0 5px 10px 0 #888;
-    position: relative;
-    z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  height: 60px;
+  box-shadow: 0 5px 10px 0
+    #888;
+  position: relative;
+  z-index: 10;
 }
 
 .main-nav {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .main-nav ul {
-    display: flex;
-    gap: 40px;
-    margin: 0;
+  display: flex;
+  gap: 40px;
+  margin: 0;
 }
 
 .main-nav li {
-    font-weight: 600;
-    font-size: 16px;
-    color: #111;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    height: 60px;
-    white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  white-space: nowrap;
 }
 
 .icons {
-    display: flex;
-    height: 60px;
-    margin-left: 40px;
+  display: flex;
+  height: 60px;
+  margin-left: 40px;
 }
 
-.icons>div {
-    width: 65px;
-    height: 60px;
-    background-color: #0098db;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid #007fc3;
-    cursor: pointer;
+.icons > div {
+  width: 65px;
+  height: 60px;
+  background-color: #0098db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid
+    #007fc3;
+  cursor: pointer;
 }
 
 .icon-btn-mypage,
 .icon-btn-search,
 .icon-btn-menu {
-    position: relative;
+  position: relative;
 }
 
 .icon-btn-mypage::after,
 .icon-btn-search::after,
 .icon-btn-menu::after {
-    content: '';
-    display: block;
-    position: absolute;
-    margin-top: 0px;
-    background: url(https://www.shinhansec.com/siw/common/images/common/bg_layout_G.png) no-repeat;
-    z-index: 1;
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 0px;
+  background: url(https://www.shinhansec.com/siw/common/images/common/bg_layout_G.png)
+    no-repeat;
+  z-index: 1;
 }
 
 .icon-btn-mypage::after {
-    left: 20px;
-    width: 25px;
-    height: 25px;
-    background-position: -195px 0;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  background-position: -195px
+    0;
 }
 
 .icon-btn-search::after {
-    left: 20px;
-    width: 24px;
-    height: 25px;
-    background-position: -220px 0;
+  left: 20px;
+  width: 24px;
+  height: 25px;
+  background-position: -220px
+    0;
 }
 
 .icon-btn-menu::after {
-    left: 20px;
-    width: 25px;
-    height: 19px;
-    background-position: -244px -3px;
+  left: 20px;
+  width: 25px;
+  height: 19px;
+  background-position: -244px -3px;
 }
 
 .sub-nav {
-    background-color: #f1f3f6;
-    padding: 10px 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+  background-color: #f1f3f6;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid
+    #ccc;
 }
 
 .sub-nav ul {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .sub-nav li {
-    font-size: 15px;
-    cursor: pointer;
+  font-size: 15px;
+  cursor: pointer;
 }
