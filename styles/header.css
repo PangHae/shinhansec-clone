@@ -59,6 +59,11 @@ ul {
     padding: 9px;
 }
 
+.top-links li:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
 .top-links .bold {
     color: #333333;
     font-weight: 600;
@@ -90,12 +95,13 @@ ul {
     flex: 1;
     display: flex;
     justify-content: center;
+    height: 100%;
 }
 
 .main-nav ul {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -108,8 +114,47 @@ ul {
     cursor: pointer;
     display: flex;
     align-items: center;
-    height: 60px;
+    padding: 0px 10px;
     white-space: nowrap;
+}
+
+/* .main-nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #189bde;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s ease;
+}
+
+.main-nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.main-nav ul li:hover {
+    color: #0076c6;
+} */
+
+.main-nav ul li:hover{
+    position: relative;
+    color: #189bde;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: #189bde;
+        transform: scaleX(1);
+        transform-origin: left center;
+        transition: transform 0.3s ease;
+    }
 }
 
 .icons {
@@ -223,7 +268,6 @@ ul {
 .sub-nav-icon-print,
 .sub-nav-icon-text {
     position: relative;
-
     flex: 1;
 }
 
@@ -263,7 +307,6 @@ ul {
     background: url("https://www.shinhansec.com/siw/common/images/common/bg_layout_G.png") no-repeat;
     background-position: -526px -20px;
 }
-
 
 .sub-nav-icon-text::after {
     content: '';
