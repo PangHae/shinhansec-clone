@@ -8,7 +8,7 @@
 }
 
 .footArea {
-    /* width: 980px; */
+    width: 980px;
     margin: 0 auto;
     text-align: left;
 }
@@ -32,6 +32,8 @@
     color: #000;
     font-size: 14px;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
 }
 
 .callList li strong {
@@ -39,30 +41,25 @@
     color: #1598dc;
     font-size: 32px;
     font-weight: normal;
+    line-height: 1.6;
 }
 
 .call02 .infoText {
     font-size: 12px;
     color: #333;
     line-height: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 .call02 .link:hover {
     text-decoration: underline;
+    color: #0066cc;
 }
 
 a:link {
     text-decoration: none;
     color: #333;
-}
-
-.footer p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
 }
 
 .footArea .call03.pt0 {
@@ -106,6 +103,13 @@ a:link {
 .footArea .linkList {
     float: right;
     margin-top: 40px;
+    font-size: 14px;
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #333;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+    text-size-adjust: none;
+    line-height: 1;
 }
 
 .footArea .linkList a:first-child {
@@ -293,4 +297,135 @@ ol:after, ul:after {
     width: 13px;
     height: 7px;
     background: url(../assets/bg_footer.gif) no-repeat -144px 0;
+}
+
+.footArea .comLink .socialList {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.footArea .comLink .socialList li {
+    float: left;
+    margin-left: 10px;
+}
+
+.footArea .comLink .socialList li a {
+    display: block;
+    width: 22px;
+    height: 22px;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    background: url(../assets/image.png) no-repeat 0 0;
+}
+
+.footArea .comLink .socialList li.socialList02>a {
+    background-position: -22px 0;
+}
+
+.footArea .comLink .socialList li.socialList04>a {
+    background-position: -66px 0;
+}
+
+.footArea .comLink .socialList li.socialList05>a {
+    background-position: -88px 0;
+}
+
+.footArea .comLink .socialList li.socialList06>a {
+    background-position: -110px 0;
+}
+
+.footArea .comLink .socialList:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.footArea .footBtm {
+    overflow: hidden;
+    position: relative;
+    margin: 16px 0;
+}
+
+.footArea .footBtm .list {
+    margin-left: -11px;
+    line-height: 1.6;
+}
+
+.footArea .footBtm .list a {
+    position: relative;
+    display: inline-block;
+    padding: 0 9px 0 11px;
+    color: #666;
+    font-size: 13px;
+}
+
+.footArea .footBtm .list a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.footArea .footBtm .list a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background: #8a8885;
+}
+
+.footArea .footBtm .list a.col {
+    color: #152475;
+}
+
+.footArea .footBtm .copyright {
+    margin-top: 3px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.marT20 {
+    margin-top: 20px !important;
+}
+
+.footArea .footBtm .copyright {
+    margin-top: 3px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.footArea .footBtm .webAward_Mark {
+    overflow: hidden;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 77px;
+    width: 53px;
+    height: 72px;
+    background: url(../assets/bg_footer.gif) no-repeat 0 -65px;
+}
+
+.footArea .footBtm .oneShinhanLogo {
+    overflow: hidden;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 68px;
+    height: 27px;
+    background: url(../assets/bg_footer.gif) no-repeat -53px -64px;
+}
+
+.footArea:after {
+    content: "";
+    display: block;
+    clear: both;
+    zoom: 1;
 }
