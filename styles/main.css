@@ -262,9 +262,10 @@
         margin-bottom: 80px;
 
         .bottom-left {
-          flex: 1;
+          width: 490px;
           border-right: 1px
             solid #e2e2e4;
+          flex-shrink: 0;
 
           .bottom-left-list {
             display: flex;
@@ -349,10 +350,10 @@
 
         .bottom-right {
           display: flex;
-          flex: 1;
+          width: 490px;
           flex-direction: column;
-          padding: 0 0 0 40px;
-          margin-right: 0;
+          padding: 0 20px;
+          margin: 0 20px;
           background: url("https://www.shinhansec.com/siw/common/images/customer/bg_certi_m04.gif")
             no-repeat right
             bottom;
