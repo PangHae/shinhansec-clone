@@ -1,5 +1,6 @@
 #authentication-center-container {
-  width: 100%;
+  width: 980px;
+  height: auto;
   .container-header {
     .title {
       margin-bottom: 50px;
@@ -32,17 +33,20 @@
 
         > li {
           padding-left: 103px;
+          line-height: 22px;
         }
-        /* 
+
         > li::before {
           content: " ";
           position: absolute;
           top: 9px;
-          left: 85px;
+          left: 94px;
           width: 18px;
           height: 3px;
-          background-image: url(/siw/common/images/common/bg_list2.gif);
-        } */
+          background: url("https://www.shinhansec.com/siw/common/images/common/bg_list2.gif")
+            no-repeat;
+          background-image: url("https://www.shinhansec.com/siw/common/images/common/bg_list.gif");
+        }
       }
     }
   }
@@ -51,10 +55,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 60px 0;
+    margin: 60px 0 80px;
 
     .top-auth-content-container {
       width: 100%;
+      border-bottom: 1px solid
+        #152475;
+      margin-bottom: 40px;
       .content {
         display: flex;
         padding: 40px 0;
@@ -102,7 +109,7 @@
                 content: "";
                 display: inline-block;
                 vertical-align: middle;
-                background: url(https://www.shinhansec.com/siw/common/images/common/bg_icon.png)
+                background: url("https://www.shinhansec.com/siw/common/images/common/bg_icon.png")
                   no-repeat;
                 position: absolute;
                 top: 50%;
@@ -240,8 +247,236 @@
               left: 8px;
               width: 18px;
               height: 3px;
-              background: url(/siw/common/images/common/bg_list2.gif)
+              background: url("https://www.shinhansec.com/siw/common/images/common/bg_list2.gif")
                 no-repeat;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-auth-content-container {
+      width: 100%;
+      .bottom-top-content {
+        display: flex;
+        margin-bottom: 80px;
+
+        .bottom-left {
+          flex: 1;
+          border-right: 1px
+            solid #e2e2e4;
+
+          .bottom-left-list {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+
+            .list-item {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              border-top: 1px
+                dashed #cacdd3;
+              margin: 30px 0 0
+                20px;
+              padding: 30px
+                20px 0;
+
+              & > h2 {
+                font-size: 21px;
+                line-height: 1.6;
+                font-weight: 600;
+              }
+
+              & > p {
+                color: #666;
+                line-height: 1.6;
+                text-align: left;
+              }
+
+              .button-container {
+                position: absolute;
+                right: 20px;
+                bottom: 0px;
+
+                .icon-button {
+                  position: relative;
+                  display: inline-block;
+                  margin: 10px
+                    3px 0;
+                  color: #000;
+                  height: 30px;
+                  padding: 0
+                    28px 0
+                    10px;
+                  font-size: 14px;
+                  line-height: 30px;
+                  border: 1px
+                    solid #999;
+                  background: #fff;
+                  cursor: pointer;
+
+                  &::before {
+                    margin: -3px
+                      5px 0 0;
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: url(https://www.shinhansec.com/siw/common/images/common/bg_icon.png)
+                      no-repeat;
+                    position: absolute;
+                    top: 50%;
+                    right: 8px;
+                    margin: -4px
+                      0 0;
+                    width: 5px;
+                    height: 7px;
+                    background-position: 0 -40px;
+                  }
+                }
+              }
+            }
+
+            &
+              > li:first-child {
+              border: none;
+              margin-top: 0;
+              padding-top: 0;
+            }
+          }
+        }
+
+        .bottom-right {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          padding: 0 0 0 40px;
+          margin-right: 0;
+          background: url("https://www.shinhansec.com/siw/common/images/customer/bg_certi_m04.gif")
+            no-repeat right
+            bottom;
+
+          & > h2 {
+            font-size: 21px;
+            line-height: 1.6;
+            font-weight: 600;
+            margin-bottom: 20px;
+          }
+
+          & > span {
+            color: #666;
+            font-weight: normal;
+          }
+
+          & > ul {
+            width: 135px;
+            margin-top: 40px;
+
+            & > li {
+              margin-bottom: 25px;
+              background: url("https://www.shinhansec.com/siw/common/images/customer/arr_r.png")
+                no-repeat
+                right 6px;
+              & a {
+                line-height: 1.6;
+                color: #000;
+                text-decoration: none;
+                font-size: 17px;
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bottom-bottom-content {
+        padding: 40px 0;
+        width: 100%;
+        border: 1px solid
+          #c8c8cc;
+
+        & > h2 {
+          font-size: 1.7em;
+          line-height: 1.6;
+          font-weight: 600;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+        .certi-password {
+          &::before {
+            background-position: 0 -120px;
+          }
+        }
+
+        .certi-save-media {
+          &::before {
+            background-position: 0 -240px;
+          }
+        }
+
+        & > ul {
+          display: flex;
+          & > li {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+            text-align: center;
+            justify-content: center;
+            & > div {
+              border-right: 1px
+                dashed
+                rgb(
+                  202,
+                  205,
+                  211
+                );
+
+              & > a {
+                color: #333;
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 24px;
+                height: 24px;
+
+                &:hover {
+                  text-decoration: underline;
+                  color: #006bd8;
+                }
+
+                &::after {
+                  content: "";
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  vertical-align: middle;
+                  margin: -3px
+                    0 0 9px;
+                  background: url("https://www.shinhansec.com/siw/common/images/common/bg_icon.png")
+                    no-repeat;
+                  background-position: 0 -50px;
+                }
+              }
+            }
+            & p {
+              color: #000;
+              font-size: 16px;
+              margin-bottom: 20px;
+            }
+
+            &::before {
+              content: "";
+              display: block;
+              width: 75px;
+              height: 60px;
+              margin: 0 auto
+                30px;
+              background: url("https://www.shinhansec.com/siw/common/images/customer/bg_certi_icon.gif");
             }
           }
         }
