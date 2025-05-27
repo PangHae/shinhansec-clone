@@ -253,12 +253,12 @@ a:link {
     letter-spacing: 1px;
 }
 
-ol:after, ul:after {
+/* ol:after, ul:after {
     content: "";
     display: block;
     clear: both;
     zoom: 1;
-}
+} */
 
 .comLink .list a {
     color: #000;
